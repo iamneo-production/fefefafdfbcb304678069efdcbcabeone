@@ -59,7 +59,7 @@ function resetGame() {
   }
   currentPlayer = x;
   gameEnded = false;
-  result.textContent = "It's X's turn";
+  result.textContent = "Player X Turn";
   resetBtn.disabled = true;
 }
 
@@ -83,7 +83,7 @@ function handleBoxClick(event) {
   }
   currentPlayer = currentPlayer === x ? o : x;
   result.textContent =
-    currentPlayer === x ? "It's X's turn" : "It's O's turn";
+    currentPlayer === x ? "Player X Turn" : "Player O Turn";
 }
 
 resetBtn.addEventListener("click", resetGame);
